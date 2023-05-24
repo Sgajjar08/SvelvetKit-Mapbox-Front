@@ -3,8 +3,8 @@ export async function load({ fetch }) {
 	try {
 		const response = await fetch('ile-de-france.geojson');
 		const geojsonData = await response.json();
-		console.log(geojsonData);
-		// @ts-ignore
+
+        // @ts-ignore
 		const bridgesGeoJson = {
 			type: 'FeatureCollection',
 			// @ts-ignore

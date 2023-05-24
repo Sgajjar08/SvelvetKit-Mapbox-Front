@@ -1,8 +1,9 @@
 {
-	"routes": [
-		{
-			"src": "/static/(.*)",
-			"dest": "/static/$1"
-		}
-	]
+	"$schema": "http://openapi.vercel.sh/vercel.json",
+	"github": {
+		"silent": true
+	},
+	"trailingSlash": false,
+	"installCommand": "pnpm install --frozen-lockfile --verbose && pnpm rebuild",
+	"buildCommand": "pnpm build",
 }
