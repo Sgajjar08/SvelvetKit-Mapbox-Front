@@ -1,7 +1,7 @@
 // @ts-ignore
 export async function load({ fetch }) {
 	try {
-		const response = await fetch('ile-de-france.geojson');
+		const response = await fetch('/ile-de-france.geojson');
 		const geojsonData = await response.json();
 
         // @ts-ignore
