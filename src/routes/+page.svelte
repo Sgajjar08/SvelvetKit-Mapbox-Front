@@ -3,4 +3,4 @@
 	export let data;
 </script>
 
-<Mapboxmap bridgesGeoJson={data.bridgesGeoJson} otherGeoJson={data.otherGeoJson}/>
+<Mapboxmap bridgesGeoJson={data.bridgesGeoJson} otherGeoJson={data.otherGeoJson} />

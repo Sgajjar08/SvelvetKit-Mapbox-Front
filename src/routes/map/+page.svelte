@@ -30,7 +30,7 @@
 			map.addSource('other-geojson-data', {
 				type: 'geojson',
 				data: otherGeoJson,
-				tolerance: 3.5,
+				tolerance: 3.5
 			});
 
 			// Add a layer to display the OSM data
@@ -49,7 +49,7 @@
 				data: bridgesGeoJson
 			});
 
-			let features = bridgesGeoJson.features
+			let features = bridgesGeoJson.features;
 
 			for (const feature of features) {
 				const maxspeed = feature.properties.maxspeed;
@@ -201,7 +201,7 @@
 	.filter-group input[type='checkbox']:checked + label {
 		background-color: white;
 	}
-	.p-l-1{
+	.p-l-1 {
 		padding-left: 10px;
 	}
 </style>
