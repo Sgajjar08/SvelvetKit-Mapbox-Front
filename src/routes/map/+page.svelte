@@ -11,6 +11,7 @@
 	import { onMount } from 'svelte';
 	import mapboxgl from 'mapbox-gl';
 	import 'mapbox-gl/dist/mapbox-gl.css';
+	import Chart from './chart/+page.svelte';
 
 	onMount(async () => {
 		mapboxgl.accessToken =
@@ -121,6 +122,7 @@
 <nav id="filter-group" class="filter-group">
 	<h4 class="p-l-1">Filter by max speed</h4>
 </nav>
+<Chart bind:bridgesGeoJson />
 
 <style>
 	.mapboxgl-popup {
